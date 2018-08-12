@@ -297,7 +297,7 @@ html, body {
 
 .profile_page_card_style {
     align-items: center;
-    width: 50%;
+    width: 25%;
     overflow: hidden;
 }
 
@@ -316,7 +316,7 @@ html, body {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(to bottom, #68686800, #68686800, #68686800, #3a6a9714, #1f1f1f) #333333a8;
+    background: linear-gradient(to bottom, #68686800, #68686800, #68686800, #3a6a9714, #333333) #333333d9;
     z-index: -1;
 }
 
@@ -324,7 +324,12 @@ html, body {
     margin-bottom: 35px;
 }
 
-.card_header_functional_section {
+.profile_page_card_content_categories_list  {
+    position: relative;
+    top: 15px;
+}
+
+.profile_page_card_header_style > .card_header_functional_section {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -360,52 +365,6 @@ html, body {
 
 .profile_page_card_header_info {
     width: 70%;
-}
-
-.profile_page_card_header_info > .following_followers {
-    display: flex;
-    width: 55%;
-    justify-content: space-between;
-}
-
-.profile_page_card_header_info > .following_followers > div {
-    text-align: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.followers > .title {
-    font-family: monospace;
-    font-weight: bolder;
-    font-size: 14px;
-    color: #fff;
-}
-
-.following > .title {
-    font-family: monospace;
-    font-weight: bolder;
-    font-size: 14px;
-    color: #fff;
-}
-
-.followers > .count {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 3px;
-}
-
-.following > .count {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 3px;
-}
-
-#splitter {
-    height: 60px;
-    width: 1px;
-    background-color: #fff;
 }
 
 .profile_page_card_header_info > .user_from {
@@ -447,54 +406,56 @@ html, body {
     width: 15px;
 }
 
-.profile_page_card_header_settings {
+.profile_page_card_header_search {
     cursor: pointer;
 }
 
-.profile_page_card_header_settings > span > i {
+.profile_page_card_header_search > span > i {
     color: #fff;
     font-size: 24px;
     transition:  transform 0.3s ease;
 }
 
-.profile_page_card_header_settings > span > i:hover {
-    transform: rotate(90deg);
-}
-
 .profile_page_card_content_style {
-    background-image: linear-gradient(to top, #1f1f1f, #1f1f1f, #1f1f1f, #1f1f1f, #1f1f1f);
-    padding: 0 50px 20px 50px;
+    background-image: linear-gradient(to right top, #2e5792, #31568a, #345482, #37537b, #3a5173);
+    padding: 15px 15px 20px 15px;
 }
 
 .profile_page_card_content_style > .card_content_start {
-    width: 65%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.profile_page_card_content_style > .card_content_start > .btn_style {
-    text-decoration: none;
-    padding: 13px 65px;
-    border-radius: 5px;
-    background-color: #85607e;
+.profile_page_card_content_categories_list > div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+.profile_page_card_content_categories_list > div >.cl_item {
+    list-style-type: none;
     color: #fff;
+    cursor: pointer;
+    padding-bottom: 5px;
     font-size: 14px;
-    font-weight: bolder;
-    -webkit-transition: background-color .5s ease-out;
-    -moz-transition: background-color .5s ease-out;
-    -o-transition: background-color .5s ease-out;
-    transition: background-color .5s ease-out;
+    font-weight: 600;
 }
 
-.profile_page_card_content_style > .card_content_start > .btn_style:hover {
-    background-color: rgba(158, 98, 238, 0.7);
+.profile_page_card_content_categories_list > div >.active {
+    border-bottom: 2px solid #fff;
 }
 
-.profile_page_card_content_style > .card_content_user_info {
-    text-align: center;
+.profile_card_content_category_type {
+    padding: 15px;
+    border-radius: 5px;
     color: #fff;
-
+    background-image: linear-gradient(to right top, #355c94, #3b5c8d, #405d87, #455d80, #4a5d79);
 }
 
+.event_details > h1 {
+    margin: 0 0 10px 0;
+}

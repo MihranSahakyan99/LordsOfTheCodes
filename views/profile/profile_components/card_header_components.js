@@ -18,11 +18,12 @@ export const ProfileCardHeaderTitle = () => {
     )
 };
 
-export const ProfileCardHeaderSettings = () => {
+export const ProfileCardHeaderSearch = () => {
     return(
-        <div className="profile_page_card_header_settings">
+        <div className="profile_page_card_header_search">
             <span>
-                <i className="fas fa-cog"></i>
+               <i className="fas fa-search"></i>
+
             </span>
         </div>
     )
@@ -38,17 +39,16 @@ export const ProfileCardHeaderInfo = () => {
             <div className="user_from">
                 SAN FRANCISCO, CA
             </div>
-            <div className="following_followers">
-                <div className="following">
-                    <div className="count">1,200</div>
-                    <div className="title">FOLLOWING</div>
-                </div>
-                <div id="splitter"></div>
-                <div className="followers">
-                    <div className="count">5,200</div>
-                    <div className="title">FOLLOWERS</div>
-                </div>
-            </div>
+        </div>
+    )
+};
+
+export const ProfileCardHeaderCategoriesList = () => {
+    return (
+        <div>
+            <div className="cl_item active">Events</div>
+            <div className="cl_item">Interests</div>
+            <div className="cl_item">Activity</div>
         </div>
     )
 };

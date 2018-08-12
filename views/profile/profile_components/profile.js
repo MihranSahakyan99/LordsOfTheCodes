@@ -1,48 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../../../styles/common.css';
-import { ProfileCardHeaderHamburger, ProfileCardHeaderSettings, ProfileCardHeaderTitle, ProfileCardHeaderInfo } from './card_header_components'
+import { ProfileCardHeaderHamburger, ProfileCardHeaderSearch, ProfileCardHeaderInfo, ProfileCardHeaderCategoriesList } from './card_header_components'
+import { ProfileCardContentCategories } from './card_content_components'
 import { ProfilePageCanvasAnimation } from '../../common_components/profile_page_canvas';
 
-class ProfileCardHeader extends React.Component {
+class ProfileCardStrangerHeader extends React.Component {
     render() {
         return(
             <div className="profile_page_card_header_style profile_page_card_style">
                 <div className="dark"></div>
                 <div className="card_header_functional_section">
                     <ProfileCardHeaderHamburger />
-                    <ProfileCardHeaderTitle />
-                    <ProfileCardHeaderSettings />
+                    <ProfileCardHeaderSearch />
                 </div>
                 <div className="card_header_profile_info_section">
                     <ProfileCardHeaderInfo />
                 </div>
+                <div className="profile_page_card_content_categories_list">
+                    <ProfileCardHeaderCategoriesList />
+                </div>
             </div>
         )
     }
 }
 
-class ProfileCardContent extends React.Component {
+class ProfileCardStrangerContent extends React.Component {
     render() {
         return(
             <div className="profile_page_card_content_style profile_page_card_style">
-                <div className="card_content_start">
-                    <a href="#" className="btn_style">MESSAGE</a>
-                    <a href="#" className="btn_style">FOLLOW</a>
-                </div>
-                <div className="card_content_user_info">
-                    <h2>About Me</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </p>
-                </div>
+                <ProfileCardContentCategories />
             </div>
         )
     }
 }
 
-class ProfileCard extends React.Component {
+class ProfileCardStrangerCard extends React.Component {
     constructor() {
         super();
     }
@@ -66,10 +59,10 @@ class ProfilePage extends React.Component {
     render() {
         return (
             <div>
-                <ProfileCard>
-                    <ProfileCardHeader />
-                    <ProfileCardContent />
-                </ProfileCard>
+                <ProfileCardStrangerCard>
+                    <ProfileCardStrangerHeader />
+                    <ProfileCardStrangerContent />
+                </ProfileCardStrangerCard>
                 <ProfilePageCanvasAnimation context = {"profile_canvas"} prt_count = { 50 } />
             </div>
         );
