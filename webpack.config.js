@@ -1,8 +1,13 @@
 module.exports = {
-    entry: './views/home.js',
+    entry: {
+        //canvas  : './views/common_components/canvas.js',
+        home    : './views/home/home_components/home.js',
+        profile : './views/profile/profile_components/profile.js',
+        login   : './views/login/login_components/login.js',
+    },
     output: {
         path: 'dist',
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
 
     module: {
@@ -14,8 +19,11 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015']
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css'
             }
         ]
     }
-
 };
