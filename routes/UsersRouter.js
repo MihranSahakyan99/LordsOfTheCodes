@@ -1,10 +1,12 @@
+const LoginHelper = require("../helpers/LoginHelper");
+
 module.exports = (app, passport) => {
     app.get('/', (req, res) => {
         res.render('home/home', {name: 'Home'});
     });
 
 
-    app.get('/profile', isLoggedIn, (req, res) => {
+    app.get('/profile', LoginHelper.isLoggedIn, (req, res) => {
         res.render('profile/profile', {name: 'Profile'});
     });
 
@@ -33,8 +35,4 @@ module.exports = (app, passport) => {
     });
 };
 
-const isLoggedIn = (req, res, next) => {
-    if(req.isAuthenticated())
-        return next();
-    res.redirect('/');
-};
+

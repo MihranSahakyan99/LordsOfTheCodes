@@ -22,8 +22,7 @@ export const ProfileCardHeaderSearch = () => {
     return(
         <div className="profile_page_card_header_search">
             <span>
-               <i className="fas fa-search"></i>
-
+              <i className="fas fa-ellipsis-v"></i>
             </span>
         </div>
     )
@@ -43,12 +42,3 @@ export const ProfileCardHeaderInfo = () => {
     )
 };
 
-export const ProfileCardHeaderCategoriesList = () => {
-    return (
-        <div>
-            <div className="cl_item active">Events</div>
-            <div className="cl_item">Interests</div>
-            <div className="cl_item">Activity</div>
-        </div>
-    )
-};

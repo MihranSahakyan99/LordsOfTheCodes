@@ -1,6 +1,6 @@
 import React from "react";
-import { WINDOW_HEIGHT, WINDOW_WIDTH } from "../../helpers/constants";
-import  CanvasParticlesHelper from "../../helpers/helper";
+import { WINDOW_HEIGHT, WINDOW_WIDTH } from "../../helpers/Constants";
+import  CanvasParticlesHelper from "../../helpers/CanvasHelper";
 
 /**
  * Every <canvas>(BACKGROUND-ANIMATION-WITH-PARTICLES) implements ---> Canvas(<Abstract Class>)

@@ -6,7 +6,7 @@ module.exports = {
         login   : './views/login/login_components/login.js',
     },
     output: {
-        path: 'dist',
+        path: '../dist',
         filename: '[name].bundle.js'
     },
 

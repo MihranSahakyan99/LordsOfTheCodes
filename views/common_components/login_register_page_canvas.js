@@ -1,5 +1,5 @@
 import React from "react";
-import { WINDOW_HEIGHT, WINDOW_WIDTH } from "../../helpers/constants";
+import { WINDOW_HEIGHT, WINDOW_WIDTH } from "../../helpers/Constants";
 import { Canvas, Particle } from "./canvas";
 
 export class LoginRegisterPageCanvasAnimation extends Canvas {
